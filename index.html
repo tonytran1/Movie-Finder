@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="expires" content="0">
+    <title>Movie Finder</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/movie-modal.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+       <div class="navbar-header">
+         <a class="random"><img class='navbar-brand logo responsive' src="assets/logo.png" /></a>
+         <form class="navbar-form navbar-right">
+          <div id="search-bar" class="input-group">
+           <input id="search" type="text" placeholder="Search movies or series!" class="form-control" />
+           <div class="input-group-btn">
+            <button class="search-button btn btn-md btn-block btn-secondary"><span class="glyphicon glyphicon-search"></span></button>
+           </div>
+          </div>
+         </form>
+      </div>
+     </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div id="content" class="row">
+      </div>
+    </div>
+
+    <div id="movie-modal" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header header-style">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 id="movie-title" class="modal-title"></h4>
+          </div>
+          <div id="movie-body" class="modal-body" align="middle">
+            <div id='rated'></div>
+            <div id='poster'></div>
+            <div id='genre'></div>
+            <div id='run-time'></div>
+            <div id='directors'></div>
+            <div id='actors'></div>
+            <div id='ratings'></div>
+            <div id='plot'></div>
+            <div id='awards'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom Javascript -->
+    <script src="js/popularMovies.js"></script>
+    <script src="js/movies.js"></script>
+  </body>
+</html>

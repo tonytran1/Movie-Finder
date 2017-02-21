@@ -1,0 +1,124 @@
+@media screen and (max-width: 760px) {
+  .logo {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-wrapper {
+    left: 2.5em;
+    position: relative;
+    margin: 1px;
+  }
+}
+
+h1 {
+  color: #fff;
+}
+
+body {
+  padding-top: 80px;
+  background-color: #262626;
+}
+
+.random {
+  cursor: pointer;
+}
+
+.thumb {
+  margin-bottom: 30px;
+}
+
+.img-wrapper {
+  float: left;
+  position: relative;
+}
+
+.movie-select > img {
+  height: 350px;
+  width: 250px;
+  box-shadow: 2.5px 2.5px 2px black;
+}
+
+.image {
+  cursor: pointer;
+  margin: 0 auto;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+.navbar {
+  outline: 0;
+}
+
+#search-bar {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2.5px 2.5px 1px #000;
+}
+
+.glyphicon-search {
+  width: 40px;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand > img {
+  text-align: center;
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+  display: inline;
+}
+
+.right {
+  float: right;
+  display: inline;
+}
+
+.movie-tag {
+  font-size: 9pt;
+  color: #fff;
+  padding: 9px 15px;
+  background-color: black;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 2px black;
+  -moz-box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 4px 2px black;
+  position: absolute;
+  top: 0;
+  left: 1.3em;
+  width: 250px;
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+}
+
+.title-header {
+  color: #222;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
+.modal-fonter {
+  max-height: 50px;
+}
+
+.player, .movie-select {
+  cursor: pointer;
+}

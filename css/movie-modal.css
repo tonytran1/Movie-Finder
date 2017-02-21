@@ -1,0 +1,52 @@
+.modal-dialog {
+  border: 3px solid black;
+}
+
+.movie-header {
+  border: 0.5px solid black;
+  box-shadow: 1px 1px 1px black;
+  padding: 2px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-style {
+  color:#fff;
+  padding:9px 15px;
+  border-bottom:1px solid #eee;
+  background-color: black;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.close {
+  font-size: 24pt;
+  font-weight: bold;
+  color: #fff;
+}
+
+#movie-title {
+  font-size: 16pt;
+}
+
+#movie-body {
+  background-color: #e6e6e6;
+  font-size: 14pt;
+}
+
+#movie-modal {
+  top: 15%;
+  outline: none;
+}
+
+#info-poster {
+  height: 280px;
+  width: 200px;
+  margin-bottom: 1em;
+  border: 1px solid black;
+  box-shadow: 3.5px 3.5px 2.5px black;
+}
