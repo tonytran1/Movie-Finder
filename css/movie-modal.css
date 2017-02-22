@@ -29,6 +29,10 @@
   color: #fff;
 }
 
+.trailer {
+  display: inline-block;
+}
+
 #movie-title {
   font-size: 16pt;
 }

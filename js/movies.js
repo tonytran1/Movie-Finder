@@ -86,9 +86,9 @@ function printRatings(movie) {
 
 function printPoster(movie) {
   if (movie.Poster !== "N/A") {
-    $('#poster').html("<img id='info-poster' class='img-responsive' src=" + movie.Poster + " alt='' data-toggle='tooltip' data-placement='top' title='" + movie.Title + "'>");
+    $('#poster').html("<a class='trailer' href='http://m.imdb.com/title/" + movie.imdbID + "/videogallery' target='_blank'><img id='info-poster' class='img-responsive' src=" + movie.Poster + " alt='' data-toggle='tooltip' data-placement='top' title='" + movie.Title + " Trailer'></a>");
   } else {
-    $('#poster').html("<img id='info-poster' class='img-responsive' src='assets/placeholder.png' alt='' data-toggle='tooltip' data-placement='top' title='" + movie.Title + "'>");
+    $('#poster').html("<a class='trailer' href='http://m.imdb.com/title/" + movie.imdbID + "/videogallery' target='_blank'><img id='info-poster' class='img-responsive' src='assets/placeholder.png' alt='' data-toggle='tooltip' data-placement='top' title='" + movie.Title + " Trailer'></a>");
   }
 }
 
@@ -100,7 +100,7 @@ function printInfo(movie) {
   $('#actors').html(`<h4 class='movie-header'>Stars</h4><p>${ movie.Actors }</p>`);
   $('#plot').html(`<h4 class='movie-header'>Plot</h4>` +
                   `<p>${ movie.Plot }</p>`);
-  $('#awards').html(`<h4 class='movie-header'>Awards</h4><a href='https://www.imdb.com/title/${ movie.imdbID }/awards'><p>${ movie.Awards }</p></a>`);
+  $('#awards').html(`<h4 class='movie-header'>Awards</h4><a href='https://www.imdb.com/title/${ movie.imdbID }/awards' target='_blank'><p>${ movie.Awards }</p></a>`);
 }
 
 function resetModal() {
